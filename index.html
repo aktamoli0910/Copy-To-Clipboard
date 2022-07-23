@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copy To Clipboard</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+         }
+
+        body{
+            height:100vh;
+            background: #dfcc21;
+            background: linear-gradient(139deg, #dfcc21 0%, #8b47e4b6 90%);
+        }
+
+        h1{
+            margin-left: 40%;
+            text-decoration: underline;
+        }
+        .one,.three{
+            margin-top: 3vh;
+            margin-left: 35%;
+
+        }
+        .two{
+            margin-top: 3vh;
+            margin-left: 38%;
+
+        }
+
+        textarea{
+            border: 3px solid black;
+            border-radius: 10px;
+            background-color: blanchedalmond;
+        }
+
+        .copybtn,.pastebtn{
+            border: 2px solid black;
+            margin-right: 10%;
+            background-color: #dfcc21;
+            cursor: pointer;
+            width: 10%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Copy To Clipboard</h1>
+    <div class="one">
+        <textarea name="" id="text" cols="50" rows="20">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel maximus lorem. Suspendisse posuere interdum dapibus. Mauris hendrerit interdum ante. Aenean varius diam id ullamcorper hendrerit. Ut sagittis nibh risus, non fringilla neque blandit a. Pellentesque ipsum massa, auctor facilisis justo nons. Curabitur lobortis tempus accumsan. Morbi vel luctus magna, eget vulputate dolor. Cras placerat ultricies massa tempus dignissim. Praesent molestie ipsum vel pharetra iaculis. Praesent vel iaculis magna. Quisque semper ipsum at varius semper.</textarea>
+    </div>
+    <div class="two">
+        <button class="copybtn"><b>Copy the text</b></button>
+        <button class="pastebtn"><b>Paste the text</b></button>
+
+    </div>
+
+    <div class="three">
+        <textarea name="" id="text1" cols="50" rows="20"></textarea>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
